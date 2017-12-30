@@ -294,6 +294,219 @@ RKEYN(dnkey) {
   Hotkey,% upkey,allstarhook
 }
 
+Layout00000409() {
+  global
+; Reihe 1
+  RSC("029","DC") ; DC = d
+  RSC("002","31") ; 31 = 1
+  RSC("003","32") ; 32 = 2
+  RSC("004","33") ; 33 = 3
+  RSC("005","34") ; 34 = 4
+  RSC("006","35") ; 35 = 5
+  RSC("007","36") ; 36 = 6
+  RSC("008","37") ; 37 = 7
+  RSC("009","38") ; 38 = 8
+  RSC("00A","39") ; 39 = 9
+  RSC("00B","30") ; 30 = 0
+  RSC("00C","DB") ; DB = j
+  RSC("00D","DD") ; DD = ́
+; Reihe 2         ;    = 
+  RSC("010","51") ; 51 = x
+  RSC("011","57") ; 57 = v
+  RSC("012","45") ; 45 = l
+  RSC("013","52") ; 52 = c
+  RSC("014","54") ; 54 = w
+  RSC("015","5A") ; 5A = ü
+  RSC("016","55") ; 55 = h
+  RSC("017","49") ; 49 = g
+  RSC("018","4F") ; 4F = f
+  RSC("019","50") ; 50 = q
+  RSC("01A","BA") ; BA = -
+  RSC("01B","BB") ; BB = ̀
+  RSC("00D","DD") ; DD = 
+; Reihe 3         ;    = 
+  RSC("01E","41") ; 41 = u
+  RSC("01F","53") ; 53 = i
+  RSC("020","44") ; 44 = a
+  RSC("021","46") ; 46 = e
+  RSC("022","47") ; 47 = o
+  RSC("023","48") ; 48 = s
+  RSC("024","4A") ; 4A = n
+  RSC("025","4B") ; 4B = r
+  RSC("026","4C") ; 4C = t
+  RSC("027","C0") ; C0 = ß
+  RSC("028","DE") ; DE = y
+; Reihe 4         ;    = 
+  RSC("02C","59") ; 59 = k
+  RSC("02D","58") ; 58 = ö
+  RSC("02E","43") ; 43 = ä
+  RSC("02F","56") ; 56 = p
+  RSC("030","42") ; 42 = z
+  RSC("031","4E") ; 4E = b
+  RSC("032","4D") ; 4D = m
+  RSC("033","BC") ; BC = ,
+  RSC("034","BE") ; BE = .
+  RSC("035","BD") ; BD = M3R̂̂̂̂̂̂̂̂̂̂̂̂̂̂̂̂̂̂̂̂̂̂̂̂̂̂̂̂̂̂̂̂̂̂̂̂̂̂̂
+; Numpad
+  RSC("145","90") ; NumLock
+  RSC("135","6F") ; NumpadDiv
+  RSC("037","6A") ; NumpadMult
+  RSC("04A","6D") ; NumpadSub
+  RSC("04E","6B") ; NumpadAdd
+  RSCN("047","67","24") ; Numpad7/NumpadHome
+  RSCN("048","68","26") ; Numpad8/NumpadUp
+  RSCN("049","69","21") ; Numpad9/NumpadPgUp
+  RSCN("04B","64","25") ; Numpad4/NumpadLeft
+  RSCN("04C","65","0C") ; Numpad5/NumpadClear
+  RSCN("04D","66","27") ; Numpad6/NumpadRight
+  RSCN("04F","61","23") ; Numpad1/NumpadEnd
+  RSCN("050","62","28") ; Numpad2/NumpadDown
+  RSCN("051","63","22") ; Numpad3/NumpadPgDn
+  RSCN("052","60","2D") ; Numpad0/NumpadIns
+  RSCN("053","6E","2E") ; NumpadDot/NumpadDel
+; Diverses
+  RKEYS("F1,F2,F3,F4,F5,F6,F7,F8,F9,F10,F11,F12")
+  RKEYS("space,enter,backspace")
+  RKEYS("del,ins,home,end,pgup,pgdn,up,down,left,right")
+; Diverses ohne *
+  RKEYN("tab")
+  RKEYN("esc")
+  RKEYN("numpadenter")
+; Modifier
+  RSC("02A","A0") ; M2L A0
+  RSC("136","A1") ; M2R A1
+  RSC("03A","14") ; M3L 14
+  RSC("02B","BF") ; M3R BF ̂
+  RSC("056","E2") ; M4L E2
+  RSC("138","A5") ; M4R A5
+
+  /**** die meisten der folgenden Shortcuts werden von AHK zwar verarbeitet,
+   **** von dort aber nur als ALT+Numpad verschickt und daher nicht für alle
+   **** Programme nutzbar, also auskommentiert und als Unicode-Zeichen
+   **** geschickt.
+  */
+  ; DNCSU00005E := "{^}{space}"
+  ; DNCSU000060 := "{``}{space}"
+  ; DNCSU0000B4 := "{´}{space}"
+
+  CSU00005E := ""
+  CSU000060 := ""
+  CSU0000B4 := ""
+
+  CSU0020AC := chr(8364)   ; €
+  ; CSU00201A := chr(130) ; ‚
+  ; CSU000192 := chr(131) ; ƒ
+  ; CSU00201E := chr(132) ; „
+  ; CSU002026 := chr(133) ; …
+  ; CSU002020 := chr(134) ; †
+  ; CSU002021 := chr(135) ; ‡
+  ; CSU0002C6 := chr(136) ; ˆ
+  ; CSU002030 := chr(137) ; ‰
+  ; CSU000160 := chr(138) ; Š
+  ; CSU002039 := chr(139) ; ‹
+  ; CSU000152 := chr(140) ; Œ
+  ; CSU00017D := chr(142) ; Ž
+  ; CSU002018 := chr(145) ; ‘
+  ; CSU002019 := chr(146) ; ’
+  ; CSU00201C := chr(147) ; “
+  ; CSU00201D := chr(148) ; ”
+  ; CSU002022 := chr(149) ; •
+  ; CSU002013 := chr(150) ; –
+  ; CSU002014 := chr(151) ; —
+  ; CSU0002DC := chr(152) ; ˜
+  ; CSU002122 := chr(153) ; ™
+  ; CSU000161 := chr(154) ; š
+  ; CSU00203A := chr(155) ; ›
+  ; CSU000153 := chr(156) ; œ
+  ; CSU00017E := chr(158) ; ž
+  ; CSU000178 := chr(159) ; Ÿ
+  CSU0000A7 := chr(167)   ; §
+  CSU0000B0 := chr(176)   ; °
+  CSU0000B2 := chr(178)   ; ²
+  CSU0000B3 := chr(179)   ; ³
+  ; CSU0000B4 := chr(180)   ; ´
+  CSU0000B5 := chr(181)   ; µ
+  CSU0000C4 := chr(196)   ; Ä
+  CSU0000D6 := chr(214)   ; Ö
+  CSU0000DC := chr(220)   ; Ü
+  CSU0000DF := chr(223)   ; ß
+  CSU0000E4 := chr(228)   ; ä
+  CSU0000F6 := chr(246)   ; ö
+  CSU0000FC := chr(252)   ; ü
+  CSU0000FF := chr(255)   ; ÿ
+
+  /*
+    Für alle Zeichen, die durch Tastendrücke ohne Shift-Taste zustande kommen,
+    muss eine gegebenenfalls gedrückte Shift-Taste vor dem Senden temporär
+    gelöst werden. Dafür werden für sämtliche relevante Zeichen die passenden
+    UNSHU.... Variablen gesetzt.
+  */
+  ; Reihe 1
+  UNSHU00005E := 1 ; ^
+  UNSHU000031 := 1 ; 1
+  UNSHU000032 := 1 ; 2
+  UNSHU000033 := 1 ; 3
+  UNSHU000034 := 1 ; 4
+  UNSHU000035 := 1 ; 5
+  UNSHU000036 := 1 ; 6
+  UNSHU000037 := 1 ; 7
+  UNSHU000038 := 1 ; 8
+  UNSHU000039 := 1 ; 9
+  UNSHU000030 := 1 ; 0
+  UNSHU0000DF := 1 ; ß
+  UNSHU0000B4 := 1 ; ´
+  ; Alphabet
+  UNSHU000061 := 1 ; a
+  UNSHU000062 := 1 ; b
+  UNSHU000063 := 1 ; c
+  UNSHU000064 := 1 ; d
+  UNSHU000065 := 1 ; e
+  UNSHU000066 := 1 ; f
+  UNSHU000067 := 1 ; g
+  UNSHU000068 := 1 ; h
+  UNSHU000069 := 1 ; i
+  UNSHU00006A := 1 ; j
+  UNSHU00006B := 1 ; k
+  UNSHU00006C := 1 ; l
+  UNSHU00006D := 1 ; m
+  UNSHU00006E := 1 ; n
+  UNSHU00006F := 1 ; o
+  UNSHU000070 := 1 ; p
+  UNSHU000071 := 1 ; q
+  UNSHU000072 := 1 ; r
+  UNSHU000073 := 1 ; s
+  UNSHU000074 := 1 ; t
+  UNSHU000075 := 1 ; u
+  UNSHU000076 := 1 ; v
+  UNSHU000077 := 1 ; w
+  UNSHU000078 := 1 ; x
+  UNSHU000079 := 1 ; y
+  UNSHU00007A := 1 ; z
+  UNSHU0000E4 := 1 ; ä
+  UNSHU0000F6 := 1 ; ö
+  UNSHU0000FC := 1 ; ü
+  ; Rest
+  UNSHU00002B := 1 ; +
+  UNSHU000023 := 1 ; #
+  UNSHU00003C := 1 ; <
+  UNSHU00002C := 1 ; ,
+  UNSHU00002E := 1 ; .
+  UNSHU00002D := 1 ; -
+  ; AltGr
+  UNSHU0000B2 := 1 ; ²
+  UNSHU0000B3 := 1 ; ³
+  UNSHU00007B := 1 ; {
+  UNSHU00005B := 1 ; [
+  UNSHU00005D := 1 ; ]
+  UNSHU00007D := 1 ; }
+  UNSHU00005C := 1 ; \
+  UNSHU000040 := 1 ; @
+  UNSHU0020AC := 1 ; Euro
+  UNSHU00007E := 1 ; ~
+  UNSHU00007C := 1 ; |
+  UNSHU0000B5 := 1 ; µ
+}
+
 Layout00000407() {
   global
 ; Reihe 1

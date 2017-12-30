@@ -59,7 +59,7 @@ regread,inputlocalealias,HKEY_CURRENT_USER,Keyboard Layout\Substitutes,%inputloc
 if (inputlocalealias<>"")
   inputlocale:=inputlocalealias
 
-if (inputlocale<>"00000407" and inputlocale<>"00000807" and inputlocale<>"00010407") {
+if (inputlocale<>"00000407" and inputlocale<>"00000807" and inputlocale<>"00010407" and inputlocale<>"00000409" ) {
   suspend   
   regread,inputlocale,HKEY_LOCAL_MACHINE,SYSTEM\CurrentControlSet\Control\Keyboard Layouts\%inputlocale%,Layout Text
   msgbox, 52, Warnung!,
