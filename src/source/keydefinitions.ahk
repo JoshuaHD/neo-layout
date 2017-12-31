@@ -948,6 +948,15 @@ Layout00010407() {
   Layout00000407()
 }
 
+; Vietnamese
+Layout0000042a() {
+  Layout00000409()
+}
+
+; Chinese
+Layout00000804() {
+  Layout00000409()
+}
 ActivateLayOut(layout) {
   Layout%layout%()
 }
