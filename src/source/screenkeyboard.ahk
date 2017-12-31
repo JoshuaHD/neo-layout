@@ -256,7 +256,8 @@ CharProc__BST1() {
   Gui, Add, Picture,AltSubmit x0   y0  vPicture0, % ResourceFolder . "\ebene0.png"
   Gui, Font, s12 bold, %UniFontName%
   GuiKeyList := ""
-  GuiAddKeyS("029",6,9)
+  ; change from 029 to 027
+  GuiAddKeyS("027",6,9)
   GuiAddKeyS("002",44,9)
   GuiAddKeyS("003",82,9)
   GuiAddKeyS("004",120,9)
@@ -267,7 +268,8 @@ CharProc__BST1() {
   GuiAddKeyS("009",310,9)
   GuiAddKeyS("00A",348,9)
   GuiAddKeyS("00B",386,9)
-  GuiAddKeyS("00C",424,9)
+  ; change from 00C to 035
+  GuiAddKeyS("035",424,9)
   GuiAddKeyS("00D",462,9)
   GuiAddKey("backspace",510,9)
 
@@ -282,7 +284,8 @@ CharProc__BST1() {
   GuiAddKeyS("017",324,48)
   GuiAddKeyS("018",362,48)
   GuiAddKeyS("019",400,48)
-  GuiAddKeyS("01A",438,48)
+  ; change from 01A to 00C
+  GuiAddKeyS("00C",438,48)
   GuiAddKeyS("01B",476,48)
   GuiAddKey("enter",526,68)
 
@@ -296,9 +299,11 @@ CharProc__BST1() {
   GuiAddKeyS("024",303,88)
   GuiAddKeyS("025",341,88)
   GuiAddKeyS("026",379,88)
-  GuiAddKeyS("027",417,88)
+  ; change 027 to 01A
+  GuiAddKeyS("01A",417,88)
   GuiAddKeyS("028",455,88)
-  GuiAddKeySM("02B",493,88)
+  ; change from 02B to 029
+  GuiAddKeySM("029",493,88)
 
   GuiAddKeySM("02A",8,128)
   GuiAddKeySM("056",50,128)
@@ -311,7 +316,8 @@ CharProc__BST1() {
   GuiAddKeyS("032",316,128)
   GuiAddKeyS("033",354,128)
   GuiAddKeyS("034",392,128)
-  GuiAddKeyS("035",430,128)
+  ; change 035 to 02B
+  GuiAddKeyS("02B",430,128)
   GuiAddKeySM("136",498,128)
 
   GuiAddKey("space",264,168)

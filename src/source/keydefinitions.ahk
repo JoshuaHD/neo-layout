@@ -5,7 +5,8 @@ global
 layoutstring:=""
 ;   KeyCode       Ebene1  Ebene2  Ebene3  Ebene4  Ebene5  Ebene6  Ebene7* Ebene8*
 ; Reihe 1
-EDS("029",0,"T__cflx","T__cron","T__turn","T__abdt","T__hook","T__bldt") ; circumflex
+; change from 029 to 027
+EDS("027",0,"T__cflx","T__cron","T__turn","T__abdt","T__hook","T__bldt") ; circumflex
 EDS("002",0,"1","°","¹","ª"      ,"₁","¬") ; 1
 EDS("003",0,"2","§","²","º"      ,"₂","∨") ; 2
 EDS("004",0,"3","ℓ","³","№"      ,"₃","∧") ; 3
@@ -16,7 +17,8 @@ EDS("008",0,"7","€","¥","¤"      ,"ϰ","→") ; 7
 EDS("009",0,"8","„","‚",""       ,"⟨","∞") ; 8
 EDS("00A",0,"9","“","‘","S__NDiv","⟩","∝") ; 9
 EDS("00B",0,"0","”","’","S__NMul","₀","∅") ; 0
-EDSK("00C",0,"-","—","" ,"S__NSub","‑","­") ; -
+; change from 00C to 035
+EDSK("035",0,"-","—","" ,"S__NSub","‑","­") ; -
 EDS("00D",0,"T__grav","T__cedi","T__abrg","T__drss","T_dasia","T__mcrn") ; grave
 ; Reihe 2
 EDSK("010",1,"x","X","^","S__PgUp","ξ","Ξ") ; x
@@ -29,7 +31,8 @@ EDSK("016",1,"h","H","<","S__N__7","ψ","Ψ") ; h
 EDSK("017",1,"g","G",">","S__N__8","γ","Γ") ; g
 EDSK("018",1,"f","F","=","S__N__9","φ","Φ") ; f
 EDSK("019",1,"q","Q","&","S__NAdd","ϕ","ℚ") ; q
-EDSK("01A",1,"ß","ẞ","ſ","−"      ,"ς","∘") ; ß
+; change from 01A to 00C
+EDSK("00C",1,"ß","ẞ","ſ","−"      ,"ς","∘") ; ß
 EDS("01B",0,"T__acut","T__tlde","T__strk","T__dbac","T_psili","T__brve") ; acute
 ; Reihe 3
 EDSK("01E",1,"u","U","\","S__Home","" ,"⊂") ; u
@@ -41,7 +44,8 @@ EDSK("023",1,"s","S","?","¿"      ,"σ","Σ") ; s
 EDSK("024",1,"n","N","(","S__N__4","ν","ℕ") ; n
 EDSK("025",1,"r","R",")","S__N__5","ρ","ℝ") ; r
 EDSK("026",1,"t","T","-","S__N__6","τ","∂") ; t
-EDSK("027",1,"d","D",":","S__NDot","δ","Δ") ; d
+; change from 027 to 01A
+EDSK("01A",1,"d","D",":","S__NDot","δ","Δ") ; d
 EDSK("028",1,"y","Y","@","."      ,"υ","∇") ; y
 ; Reihe 4
 EDSK("02C",1,"ü","Ü","…","U00001B","" ,"∪") ; ü
@@ -53,7 +57,8 @@ EDSK("031",1,"b","B","+",":"      ,"β","⇐") ; b
 EDSK("032",1,"m","M","%","S__N__1","μ","⇔") ; m
 EDSK("033",0,",","–","""","S__N__2","ϱ","⇒") ; ,
 EDSK("034",0,".","•","'","S__N__3","ϑ","↦") ; .
-EDSK("035",1,"j","J",";",";"      ,"θ","Θ") ; j
+; change 035 to 02B
+EDSK("02B",1,"j","J",";",";"      ,"θ","Θ") ; j
 neo20layoutstring := layoutstring
 ; Numpad
 EDS("145",0,"U000009","U000009","=","≠","≈","≡") ; NumLock
@@ -108,7 +113,8 @@ ED1("numpadenter","S__NEnt")
 ED1S("02A","P__M2LD") ; Mod2L (ShiftL)
 ED1S("136","P__M2RD") ; Mod2R (ShiftR)
 ED1S("03A","P__M3LD") ; Mod3L (CapsLock)
-ED1S("02B","P__M3RD") ; Mod3R (#')
+; change from 02B to 029
+ED1S("029","P__M3RD") ; Mod3R (#')
 ED1S("056","P__M4LD") ; Mod4L (<>)
 ED1S("138","P__M4RD") ; Mod4R (AltGr)
 }
